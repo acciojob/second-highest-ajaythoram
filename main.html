@@ -11,10 +11,15 @@
 		function secondHighest(arr) {
 			//Write your code here
 			arr.sort();
-			if(arr.length === 1|| arr.length === 0) 
+			
+			
+			if(arr.length === 1|| arr.length === 0 || arr[0] === arr[arr.length-1]) 
 {
+	
 return -Infinity;
 }
+			let sum = 0;
+
         return arr[arr.length-2];
 		}
 
